@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- BOOTSTRAP CSS CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- MY CSS -->
+	<link rel="stylesheet" href="styles3.css">
+	<!-- Scrollbar CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+
+	<title>craigslist</title>
+</head>
+<body>
+
+	<nav class="navbar sticky-top flex-md-nowrap p-0">
+		<div id="content">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+		<a class="navbar-brand col-xs mr-0" href="#">craigslist</a>
+		<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+	</nav>
+
+	<!-- SIDEBAR -->
+	<div id="wrapper" class="toggled">
+
+		<!-- Close Sidebar Button -->
+		<div id="dismiss">
+			<i class="glyphicon glyphicon-arrow-left"></i>
+		</div>
+
+		<nav id="sidebar">
+			<!-- sidebar header -->
+			<!-- <div class="sidebar-header">
+				<h3>craigslist</h3>
+			</div> -->
+		
+			<ul class="list-unstyled components">
+				<li class="active"><a class="location" href="#">Knoxville, TN</a></li>
+				<li>
+					<a href="listings.html">listings example</a>
+					<!-- FOR SALE DROPDOWN -->
+					<a href="#forsaleSubmenu" data-toggle="collapse" aria-expanded="false">for sale</a>
+					<ul class="collapse list-unstyled" id="forsaleSubmenu">
+						<li><a href="#">all for sale</a></li>
+						<li><a href="#">antiques</a></li>
+						<li><a href="#">appliances</a></li>
+						<li><a href="#">arts+crafts</a></li>
+						<li><a href="#">atv/utv/sno</a></li>
+						<li><a href="#">auto parts</a></li>
+						<li><a href="#">baby+kid</a></li>
+						<li><a href="#">barter</a></li>
+						<li><a href="#">beauty+hlth</a></li>
+						<li><a href="#">bikes</a></li>
+						<li><a href="#">boats</a></li>
+						<li><a href="#">books</a></li>
+						<li><a href="#">business</a></li>
+						<li><a href="#">cars+trucks</a></li>
+						<li><a href="#">cds/dvd/vhs</a></li>
+						<li><a href="#">cell phones</a></li>
+						<li><a href="#">clothes+acc</a></li>
+						<li><a href="#">collectibles</a></li>
+						<li><a href="#">computers</a></li>
+						<li><a href="#">electronics</a></li>
+						<li><a href="#">farm+garden</a></li>
+						<li><a href="#">free</a></li>
+						<li><a href="#">furniture</a></li>
+						<li><a href="#">garage sale</a></li>
+						<li><a href="#">general</a></li>
+						<li><a href="#">heavy equip</a></li>
+						<li><a href="#">household</a></li>
+						<li><a href="#">jewelry</a></li>
+						<li><a href="#">materials</a></li>
+						<li><a href="#">motorcycles</a></li>
+						<li><a href="#">music instr</a></li>
+						<li><a href="#">photo+video</a></li>
+						<li><a href="#">rvs+camp</a></li>
+						<li><a href="#">sporting</a></li>
+						<li><a href="#">tickets</a></li>
+						<li><a href="#">tools</a></li>
+						<li><a href="#">toys+games</a></li>
+						<li><a href="#">trailers</a></li>
+						<li><a href="#">video gaming</a></li>
+						<li><a href="#">wanted</a></li>
+					</ul>
+					<!-- JOBS DROPDOWN -->
+					<a href="#jobsSubmenu" data-toggle="collapse" aria-expanded="false">jobs</a>
+					<ul class="collapse list-unstyled" id="jobsSubmenu">
+						<li><a href="#">all jobs</a></li>
+						<li><a href="#">part-time</a></li>
+						<li><a href="#">etc</a></li>
+						<li><a href="#">accounting+finance</a></li>
+						<li><a href="#">admin/office</a></li>
+						<li><a href="#">arch/engineering</a></li>
+						<li><a href="#">art/media/design</a></li>
+						<li><a href="#">biotech/science</a></li>
+						<li><a href="#">business/mgmt</a></li>
+						<li><a href="#">customer service</a></li>
+						<li><a href="#">education</a></li>
+						<li><a href="#">food/bev/hosp</a></li>
+						<li><a href="#">general labor</a></li>
+						<li><a href="#">government</a></li>
+						<li><a href="#">human resources</a></li>
+						<li><a href="#">internet engineers</a></li>
+						<li><a href="#">legal/paralegal</a></li>
+						<li><a href="#">manufacturing</a></li>
+						<li><a href="#">marketing/pr/ad</a></li>
+						<li><a href="#">medical/health</a></li>
+						<li><a href="#">nonprofit sector</a></li>
+						<li><a href="#">real estate</a></li>
+						<li><a href="#">retail/wholesale</a></li>
+						<li><a href="#">sales/biz dev</a></li>
+						<li><a href="#">salon/spa/fitness</a></li>
+						<li><a href="#">security</a></li>
+						<li><a href="#">skilled trade/craft</a></li>
+						<li><a href="#">software/qa/dba</a></li>
+						<li><a href="#">systems/network</a></li>
+						<li><a href="#">technical support</a></li>
+						<li><a href="#">transport</a></li>
+						<li><a href="#">tv/film/video</a></li>
+						<li><a href="#">web/info design</a></li>
+						<li><a href="#">writing/editing</a></li>
+					</ul>
+					<!-- HOUSING DROPDOWN -->
+					<a href="#housingSubmenu" data-toggle="collapse" aria-expanded="false">housing</a>
+					<ul class="collapse list-unstyled" id="housingSubmenu">
+						<li><a href="#">all housing</a></li>
+						<li><a href="#">apts/housing</a></li>
+						<li><a href="#">housing swap</a></li>
+						<li><a href="#">housing wanted</a></li>
+						<li><a href="#">office/commercial</a></li>
+						<li><a href="#">parking/storage</a></li>
+						<li><a href="#">real estate for sale</a></li>
+						<li><a href="#">rooms/shared</a></li>
+						<li><a href="#">rooms wanted</a></li>
+						<li><a href="#">sublets/temporary</a></li>
+						<li><a href="#">vacation rentals</a></li>
+					</ul>
+					<!-- PERSONALS DROPDOWN -->
+					<a href="#personalsSubmenu" data-toggle="collapse" aria-expanded="false">personals</a>
+					<ul class="collapse list-unstyled" id="personalsSubmenu">
+					<li><a href="#">casual encounters</a></li>
+					<li><a href="#">men seeking men</a></li>
+					<li><a href="#">men seeking women</a></li>
+					<li><a href="#">misc romance</a></li>
+					<li><a href="#">missed connecitons</a></li>
+					<li><a href="#">rants and raves</a></li>
+					<li><a href="#">strictly platonic</a></li>
+					<li><a href="#">women seeking women</a></li>
+					<li><a href="#">women seeking men</a></li>
+					</ul>
+					<!-- COMMUNITY DROPDOWN -->
+					<a href="#communitySubmenu" data-toggle="collapse" aria-expanded="false">community</a>
+					<ul class="collapse list-unstyled" id="communitySubmenu">
+					<li><a href="#">all community</a></li>
+					<li><a href="#">activities</a></li>
+					<li><a href="#">artists</a></li>
+					<li><a href="#">childcare</a></li>
+					<li><a href="#">classes</a></li>
+					<li><a href="#">events</a></li>
+					<li><a href="#">general</a></li>
+					<li><a href="#">groups</a></li>
+					<li><a href="#">local news</a></li>
+					<li><a href="#">lost+found</a></li>
+					<li><a href="#">musicians</a></li>
+					<li><a href="#">pets</a></li>
+					<li><a href="#">politics</a></li>
+					<li><a href="#">rideshare</a></li>
+					<li><a href="#">volunteers</a></li>
+					</ul>
+					<!-- SERVICES DROPDOWN -->
+					<a href="#servicesSubmenu" data-toggle="collapse" aria-expanded="false">services</a>
+					<ul class="collapse list-unstyled" id="servicesSubmenu">
+					<li><a href="#">all services</a></li>
+					<li><a href="#">automotive</a></li>
+					<li><a href="#">beauty</a></li>
+					<li><a href="#">cell/mobile</a></li>
+					<li><a href="#">computer</a></li>
+					<li><a href="#">creative</a></li>
+					<li><a href="#">cycle</a></li>
+					<li><a href="#">event</a></li>
+					<li><a href="#">farm+garden</a></li>
+					<li><a href="#">financial</a></li>
+					<li><a href="#">household</a></li>
+					<li><a href="#">labor/move</a></li>
+					<li><a href="#">legal</a></li>
+					<li><a href="#">lessons</a></li>
+					<li><a href="#">marine</a></li>
+					<li><a href="#">pet</a></li>
+					<li><a href="#">real estate</a></li>
+					<li><a href="#">skilled trade</a></li>
+					<li><a href="#">sm biz ads</a></li>
+					<li><a href="#">therapeutic</a></li>
+					<li><a href="#">travel/vac</a></li>
+					<li><a href="#">write/ed/tran</a></li>
+					</ul>
+					<!-- GIGS DROPDOWN -->
+					<a href="#gigsSubmenu" data-toggle="collapse" aria-expanded="false">gigs</a>
+					<ul class="collapse list-unstyled" id="gigsSubmenu">
+					<li><a href="#">all gigs</a></li>
+					<li><a href="#">computer</a></li>
+					<li><a href="#">creative</a></li>
+					<li><a href="#">crew</a></li>
+					<li><a href="#">domestic</a></li>
+					<li><a href="#">event</a></li>
+					<li><a href="#">labor</a></li>
+					<li><a href="#">talent</a></li>
+					<li><a href="#">writing</a></li>
+					</ul>
+					<!-- RESUMES -->
+					<li><a href="#">resumes</a></li>
+					<!-- DISCUSSION -->
+					<li><a href="#">discussion forums</a></li>
+					<!-- EVENT CALENDAR DROPDOWN -->
+					<li><a href="#">event calendar</a></li>
+					
+				</li>
+			</ul>
+		</nav>
+
+		<!-- <div id="content">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div> -->
+
+        <div class="overlay"></div>
+
+	</div>
+	
+<!-- MAP -->
+<div class="iframe-container">
+	<iframe src="https://snazzymaps.com/embed/45611" width="100%" height="600px" style="border:none;"></iframe>
+</div>
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Popper js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Custom Scroller Js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- GoogleMaps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVHGYF_Ny9Xc4F0SIk3Sj0-8Z-99MB4dU"></script>
+
+
+<script>
+	$(document).ready(function () {
+
+		
+
+     $("#sidebar").mCustomScrollbar({
+         theme: "minimal"
+    });
+
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').addClass('active');
+        $('.overlay').fadeIn();
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expaned=true]').attr('aria-expanded', 'false');
+    });
+
+    $('#dismiss, .overlay').on('click', function() {
+    	$('#sidebar').removeClass('active');
+    	$('.overlay').fadeOut();
+    });
+
+});
+
+	function initMap() {
+		var location = new google.maps.LatLng(50.0875726, 14.4189987);
+
+		var mapCanvas = document.getElementById('map');
+		var mapOptions = {
+			center: new google.maps.LatLng(28.1823294, -82.352912),
+                zoom: 9,
+                mapTypeId: google.maps.MapTypeId.HYBRID,
+                scrollwheel: false,
+                draggable: false,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true,
+                rotateControl: true,
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+
+	}
+	google.maps.event.addDomListener(window, 'load', initMap);
+
+
+
+</script>
+
+</body>
+</html>
